@@ -1,0 +1,432 @@
+body{
+    font: 15px/1.5 arial,Helvetica, sans-serif;
+    padding: 0;
+     margin: 0;
+     background-color:#cccccc;
+    }
+
+/* global */
+    .congtainer{
+        width: 80%;
+        margin-left: auto;
+        margin-bottom: navy 3px solid;
+        overflow: hidden;
+    }
+
+    /* header */
+    header{
+        background:lawngreen;
+        color: ffffff;
+        padding-top: 20px; 
+        min-height: 80px;
+        border-top: navy 3px solid;
+        border-bottom:navy 3px solid;
+    }
+
+    header a{
+        color:navy;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+
+    }
+
+    header ul{
+        margin: 0;
+        padding: 0;
+    }
+    .button_1{
+        height: 38px;
+        background:darkgreen;
+        border: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #ffffff;
+    }
+    
+
+
+    header li{
+        float: left;
+        display:inline;
+        padding:0 20px 020px;
+    }
+
+    header #branding{
+        float:left;
+    }
+    header #branding h1{
+        margin: 0;
+    }
+
+    header nav{
+        float: right;
+        margin-top: 10px;
+    }
+
+    header .highlight, header .current a{
+        color: #e8491d;
+        font-weight: bold;
+    } 
+
+    header a:hover{
+        color: #cccccc;
+        font-weight: bold;
+    }
+
+    /*show case */
+    #showcase{
+        padding: 30px;
+        min-height: 420px;
+        margin-bottom:  navy 3px solid;
+        background-image:url(../image/showcase.jpg);
+        background-size: 100%;
+
+        background-repeat: no-repeat;
+        text-align: center;
+        color: #ffffff;
+        text-overflow: right-left;
+    }
+
+    #showcase h1{
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+
+    #showcase p{
+        font-size: 20px;
+    }
+        /*show case customer*/
+    #showcasecustomer{
+        padding: 30px;
+        min-height: 150px;
+        margin-bottom:  navy 3px solid;
+        text-align: center;
+        color: #ffffff;
+        text-overflow: right-left;
+    }
+
+    #showcasecustomer h1{
+        font-size: 55px;
+        margin-bottom: 10px;
+        color: black;
+    }
+    #showcasecustomer h3{
+        font-size: 30px;
+        margin-top: 10px;
+        color: black;
+    }
+    #showcasecustomer h2{
+        font-size: 40px;
+        margin-top: 10px;
+        color: black;
+    }
+
+    #showcasecustomer p{
+        font-size: 20px;
+    }
+    /*newsletter coding*/
+
+    #newsletter{
+        border-top: navy 3px solid;
+        padding: 20px;
+        color: #ffffff;
+        height: 150px;
+        background:#cccccc;
+        border-bottom: navy 3px solid;
+    }
+
+    #newsletter h1{
+        float: left;
+        padding: 0px;
+    }
+
+    #newsletter form{
+        float: right;
+        margin-top: 15px;
+    }
+
+    #newsletter input[type="email"]{
+        padding: 4px;
+        height: 25px;
+        width: 250px;
+    }
+    #newsletter button{
+        color:#cccccc;
+        background: #e8491d;
+    }
+
+    /*boxes */
+
+/* main-col */
+#main{
+    height: 100%;
+    padding-bottom: 140px;
+}
+article#main-col{
+    float: left;
+    width: 70%;
+    
+
+}
+
+
+    /*footer*/
+    footer{
+        border-bottom: navy 3px solid;
+        border-top:navy 3px thick;
+        padding: 20px;
+        margin-top: 0px;
+        color: #ffffff;
+        background-color:lawngreen;
+        text-align: center;
+        padding-bottom:17px;
+        padding-top:17px;
+    }
+    /* meadia queries */
+    @media(max-width:768px){
+        header #branding,
+        header nav,
+        header nav li,
+        #newsletter h1,
+        newsletter form,
+        #boxes .box,
+        article#main-col,
+        aside#sidebar{
+            float: none;
+            text-align: center;
+            width: 100%;
+        }
+        header{
+            padding-bottom: 20px;
+        }
+        #showcase h1{
+            margin-top: 40px;
+        }
+        #newsletter buttom, .quote button{
+            display: block;
+            width: 100%;
+        }
+        #newsletter form inputy[type="email"], .quote input, .quote textarea{
+          width: 100%;
+          margin-bottom: 5px;  
+        }
+        }
+    
+    .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position:relative;
+    padding-top: 10px;
+    padding-left: 10px;
+
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+ /* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+} 
+
+
+
+
+
+
+
+
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.containercont {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
